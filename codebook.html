@@ -236,7 +236,7 @@ Data2&lt;-Data2[order(Data2$subject,Data2$activity),]
 write.table(Data2, file = &ldquo;tidydata.txt&rdquo;,row.name=FALSE)</p>
 
 <p>##Step 6: Generate the codebook
-code = readLines(&#39;CourseProjectCleaningData.R&#39;)
+code = readLines(&#39;run_analysis.R&#39;)
 writeLines(code,&ldquo;codebook.Rmd&rdquo;)
 library(knitr)
 knit2html(&ldquo;codebook.Rmd&rdquo;)</p>
