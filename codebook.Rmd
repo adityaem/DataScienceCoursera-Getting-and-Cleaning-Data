@@ -68,7 +68,7 @@ Data2<-Data2[order(Data2$subject,Data2$activity),]
 write.table(Data2, file = "tidydata.txt",row.name=FALSE)
 
 ##Step 6: Generate the codebook
-code = readLines('CourseProjectCleaningData.R')
+code = readLines('run_analysis.R')
 writeLines(code,"codebook.Rmd")
 library(knitr)
 knit2html("codebook.Rmd")
